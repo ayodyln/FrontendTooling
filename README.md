@@ -196,11 +196,20 @@ This is only supported on NextJS 13 right now, specifically an Alpha build versi
 Because of this, you must be ready to learn ReactJS base development and then move up to NextJS. Which is the full-stack framework of ReactJS and is created by Vercel. It's a great opportunity to learn how to build apps with these frameworks and have them for portfolio pieces, but nothing for production should come of this tool, just yet at least.
 
 <br>
-<br>
 
 ---
 
-After you have answered the above questions about each tool, compare and contrast the three tools. What makes each one unique? What makes them different? When would you use one over the other, and why?
+## Bundle Tool Final Comparisons
+
+Vite, Webpack, and Turbopack all have their places in the community. Each has its pros and cons and deciding which one to use ultimately depends on the type of project you're working with and how you want your app to function in the browser. This in the end impacts how the app runs in a user's browsers and it also impacts the development cycle.
+
+**`Vite`** is a unique tool since its purely leverages modern JavaScript modules in a browser and blends the bundling process with another very fast programming language. However, this part of the process is only handled on modules/dependencies that don't change often. Source code is bundled and served dynamically as a browser requests it to be served. Making the dev server starts very quickly and bundle process efficient too. This bundler tool is integrated with all the frameworks I use, and I'm used to how to work with it. Everything about it is snappy and bundling is easy to follow. This is great for Svelete or NextJS.
+
+**`Webpack`** opts to tackle the performance issue by bundling code in the least amount of files possible. But it is highly configurable as well, especially with custom loaders that help with bundling all sorts of files. Even though it is primarily a JS bundler, bundling files ready for the web such as digital media is important. The fact that this is highly configurable, makes it a unique tool that can be used to accomplish making production-ready web apps. But since this is a highly configurable bundler, it is somewhat tedious to set up and get running properly. You'll have to think about custom loaders and plugins to properly bundle files. If a framework has this integrated into my creating an app for development, I would use it. Because some configurations would be already set in stone.
+
+**`Turbopack`** is the new kid on the block and trying to outclass its predecessors, such as Webpack. The creators of the bundler wanted to migrate away from JS tools to focus on speedy tools for JavaScript development. Leveraging other programming languages for the use of JS applications has become more and more prevalent. This bundler though is in early alpha stages and is propriety essentially--there are goals to allow this to be used with frameworks other than NextJS. It may only ever be for NextJS because it is built to improve the framework. Meaning there are only stats of bundling/compiling times on the version of NextJS. You can't compare it to other frameworks and see if improves SvelteKit for example. This should only be used with NextJS because thats the only choice! It's a great opportunity though to work on the bleeding edge of JS development with the help of modern tools for the most modern frameworks.
+
+---
 
 From the three tools, you choose to compare and contrast, choose one, and create a sample repo to show off the tool's features.
 In your sample repo, develop a very basic example app to show off the features of the tool. Do not use any of the examples in the tools documentation.
